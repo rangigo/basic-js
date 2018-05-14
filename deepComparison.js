@@ -9,6 +9,7 @@ const deepEqual = (a, b) => {
     // else check if both are empty objects
     if (keysOfA.length == 0 && keysOfB.length == 0) return true
     else {
+      // Loop through keys (or properties) of the objects and check if they have the same properties
       let isSameProp = false
       for (let i = 0; i < keysOfA.length; i++) {
         isSameProp = keysOfA[i] == keysOfB[i] ? true : false
